@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import SimpsonComponent from "./simpson_component/SimpsonComponent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SimpsonComponent name={'Homer'} info={"Homer Jay Simpson, formerly known as Max Power,[2] is the father of the Simpson family. He is overweight, lazy, and ignorant, but also strongly devoted to his wife and children. He works as a low level safety inspector at the Springfield Nuclear Power Plant, in Sector 7G, although he's often incompetent, mostly sleeps on duty and eats the donuts provided. He spends a great deal of his time at Moe's Tavern with his lifelong friends Barney, Carl, Lenny, and bartender Moe Szyslak. At home he can often be found sitting on the sofa mindlessly watching TV while snacking on food and drinking Duff beer."} pict={'https://static.simpsonswiki.com/images/b/bd/Homer_Simpson.png'}/>
+      <SimpsonComponent name={'Marge'} info={"Marjorie \"Marge\" B.[5] Simpson,[6] (née Bouvier; born March 19[7]), is the happy homemaker and full-time mom of the Simpson family. With her husband Homer, she has three children: Bart, Lisa, and Maggie Simpson. Marge is the moralistic force in her family and often provides a grounding voice in the midst of her family's antics by trying to maintain order in the Simpson household. Aside from her duties at home, Marge flirted briefly with a number of careers ranging from police officer to anti-violence activist."} pict={'https://static.simpsonswiki.com/images/0/0b/Marge_Simpson.png'}/>
+      <SimpsonComponent name={'Bart'} info={"Bartholomew JoJo[3] \"Bart\" Simpson (born April 1[3] or February 23[4]), A.K.A. El Barto and Bartman, is the mischievous, rebellious, misunderstood, and \"potentially dangerous\" eldest child of Homer and Marge Simpson, and the brother of Lisa and Maggie Simpson."} pict={'https://static.simpsonswiki.com/images/thumb/6/65/Bart_Simpson.png/300px-Bart_Simpson.png'}/>
+      <SimpsonComponent name={'Lisa'} info={"Lisa Marie[4] Simpson (born May 9[5]) is a charismatic 8-year-old girl, who exceeds the standard achievement level of children her age. Not to everyone's surprise, she's also the moral center of her family. In her upbringing, Lisa lacks parental involvement of Homer and Marge, which leads to hobbies like playing saxophone and guitar, riding and caring for horses, and interest in advanced studies. In school, Lisa's popularity's affected by those who view her as a geeky overachiever, which leaves her with only a few friends. Lisa Simpson's a smart, witty, independent girl who focuses on her goals and strives to reach her potential, and at age 8 she's already a member of MENSA with an IQ of 159."} pict={'https://static.simpsonswiki.com/images/e/ec/Lisa_Simpson.png'}/>
+      <SimpsonComponent name={'Maggie'} info={"Margaret Lenny[8] \"Maggie\" Simpson is the youngest child of Marge and Homer, and sister to Bart and Lisa. She is almost always seen sucking on her pacifier and, when she walks, she trips over her clothing and falls on her face. Because she cannot walk or talk, Maggie is the least seen in the Simpson family."} pict={'https://static.simpsonswiki.com/images/thumb/9/9d/Maggie_Simpson.png/375px-Maggie_Simpson.png'}/>
     </div>
   );
 }
