@@ -1,16 +1,17 @@
-let baseUrl = 'https://jsonplaceholder.typicode.com/users';
+import axios from "axios";
 
-const getUsers=()=> fetch(baseUrl).then(value => value.json());
+let axiosInstance = axios.create({
+    baseURL: 'https://jsonplaceholder.typicode.com'
+})
 
-const getUser=async(id)=>{
-    let user = await fetch(baseUrl+'/'+id)
-        .then(value => value.json());
-    return user;
-}
+const getUsers=()=> axiosInstance('/users').then(value => (value.data));
 
-const getUserPosts=(id)=>{
-    fetch(baseUrl+'/'+id+'/posts')
-        .then(value => value.json());
-}
 
-export {getUsers, getUser, getUserPosts};
+// const getUser = (id)=>{
+//     axiosInstance.get('/users/'+id).then(value => value.data);
+//
+// }
+
+const getUsersPosts =(id)=> axiosInstance('users/'+id+'/posts').then(value => value);
+
+export {getUsers, getUsersPosts};

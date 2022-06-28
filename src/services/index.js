@@ -1,5 +1,3 @@
-import {getUsers, getUser, getUserPosts} from "./user.service";
-import {getPosts} from "./post.service";
+import {getUsers, getUsersPosts} from "./user.service";
 
-export {getUsers, getUser, getUserPosts};
-export {getPosts};
+export {getUsers, getUsersPosts};
