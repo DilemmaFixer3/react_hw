@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {PostsApiService} from "../services/posts.api.service";
+import {PostsApiService} from "../services";
 import Post from "./Post";
 
 class Posts extends Component {

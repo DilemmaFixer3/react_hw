@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {CommentsApiService} from "../services/comments.api.service";
+import {CommentsApiService} from "../services";
 import Comment from "./Comment";
 
 
